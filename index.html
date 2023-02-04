@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Generator</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            
+        }
+
+        ::-webkit-scrollbar {
+    display: none;
+}
+
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url("./rnm.png");
+           
+        }
+
+        #disp{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: greenyellow;
+            /* margin-left: 38%;
+            margin-top: 20px; */
+   
+        }
+
+
+        #name,#species,#gender,#status{
+            
+            text-align: center;
+            /* margin-left: -550px;
+            margin-top: 10px; */
+            background-color: rgba(0, 0, 0, 0.462);
+            font-size: 20px;
+        }
+
+        #pic{
+            display: none;
+            border: 5px solid greenyellow;
+            width: 400px;
+            height: 350px;
+        }
+
+        img{
+        width: fit-content;
+        height: fit-content;
+      
+        }
+
+
+        button{
+            margin-bottom: -700px;
+            position: absolute;
+            /* margin-left: 44%;
+            margin-top: 310px; */
+            border-radius: 25px 25px;
+            background-color: rgba(0, 0, 0, 0.384);
+            color: rgba(0, 0, 0, 0);
+            float: right;
+            position: absolute;
+            
+        }
+
+        #portal{
+            width: 170px;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="disp">
+        <img id="pic" src=""></img>
+        <div id="name"></div>
+        <div id="species"></div>
+        <div id="gender"></div>
+        <div id="status"></div>
+        <button id="btn" onclick="returnChar(event)"><img id="portal" src="./rnmP.png"></button>
+    </div>
+    
+    <div>
+        <form>
+
+        </form>
+        </div>
+
+    <script src="./poke.js"></script>
+</body>
+</html>
